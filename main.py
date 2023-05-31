@@ -21,12 +21,12 @@ while True:
     currentx,currenty = pya.position()
 
     while(input.get_thumb_values(input.get_state(0))[LEFT_THUMB][XVALUE] > 0):
-        currentx *= 11100
-        pya.moveTo(currentx, currenty,0.2)
+        currentx += 20
+        pya.moveTo(currentx, currenty)
 
     while(input.get_thumb_values(input.get_state(0))[LEFT_THUMB][XVALUE] < 0):
-        currentx -= 10
-        pya.moveTo(currentx, currenty,1)
+        currentx -= 20
+        pya.moveTo(currentx, currenty)
 
     
 
